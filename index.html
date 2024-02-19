@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Paint</title>
+</head>
+<body>
+    <header>
+      <h1>Painter</h1>
+    </header>
+    <aside>
+      <section>
+        <div><label>x:</label><input id="x" value="100"/></div>
+        <div><label>y:</label><input id="y" value="100"/></div>
+        <div id="third"><label>x2:</label><input value="200"/></div>
+        <div id="fourth"><label>y2:</label><input value="200"></div>
+      </section>
+      <section>
+        <form>
+          <div><input name="shape" type="radio" value="line" checked></input><label>Line</label></div>
+          <div><input name="shape" type="radio" value="circle"></input><label>Circle</label></div>
+          <div><input name="shape" type="radio" value="rectangle"></input><label>Rectangle</label></div>
+          <div><input name="shape" type="radio" value="square"></input><label>Square</label></div>
+        </form>        
+      </section>
+      <section>
+        <button type="button">Draw</button>
+        <input type="color" />
+        <label>Width:</label><input type="number" value="1"/>
+      </section>
+    </aside>
+    <canvas width="1200px" height="600px"></canvas>
+  <script type="module" src="./js/functions.js"></script>
+</body>
+</html>
